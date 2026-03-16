@@ -122,7 +122,7 @@ skills:
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
-formspree-key:   https://formspree.io/f/xgonnevb
+formspree-key:   xgonnevb
 
 
 
@@ -160,7 +160,7 @@ lemon theme:
   background: "#fffdf5"
   light_background: "#fff9e6"
   
-  pink theme:
+pink theme:
   text: "#2d2d2d"
   border: "#f8e2e2"
   link: "#ff8fa3"
