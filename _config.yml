@@ -37,10 +37,10 @@ resume-url: https://drive.google.com/file/d/1DKCTlQ96W1I0QKp6nq_7ysWsZrrzSQ7H/vi
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: https://www.linkedin.com/in/enejiohieku/   # https://www.linkedin.com/in/{your url slug} 
-  github: https://github.com/enejiohieku  # https://github.com/{your url slug}
-  youtube: https://youtube.com/@enejiohieku          # https://youtube.com/@{your url slug}  
-  x-twitter: https://x.com/enejiohieku  # https://x.com/{your url slug}
+  linkedin: enejiohieku   # https://www.linkedin.com/in/{your url slug} 
+  github: enejiohieku  # https://github.com/{your url slug}
+  youtube: enejiohieku          # https://youtube.com/@{your url slug}  
+  x-twitter: enejiohieku  # https://x.com/{your url slug}
   gmail: enejiohieku@gmail.com 
   stackoverflow:       # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
@@ -89,7 +89,7 @@ skills:
     tools:
     - KiCad
     - Fusion 360 Electronics
-    - Eagle 
+    - EagleCAD
   - category: Computer Graphics / User Interface Design
     tools:
     - Kivy/KivyMD
@@ -113,22 +113,21 @@ skills:
     - JetBrains IDEs (CLion, PyCharm, etc.)
     - Jupyter Notebook
     - Git / GitHub
-    - Ubuntu/Linux
+    - Ubuntu (Debian distros)
     - Docker
   - category: Prototyping
     tools:
-    - CNC
     - 3D Printing
     - PCB Fabrication
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
-formspree-key:   https://formspree.io/f/{8-digit key}
+formspree-key:   https://formspree.io/f/xgonnevb
 
 
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
-colors: # this is the basic theme
+basic theme: # this is the basic theme
   text: "#1a1c20"
   border: "#ddd"
   link: "#4a76ee"
@@ -145,7 +144,7 @@ basic theme:
   background: "#ffffff"
   light_background: "#f3f5fb"
   
-  mint theme:
+colors:  #mint theme:
   text: "#2c3333"
   border: "#e0f2ef"
   link: "#40b3a2"
