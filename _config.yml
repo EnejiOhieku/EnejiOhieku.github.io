@@ -7,38 +7,44 @@
 
 # Main Page Setup
 
-title: Eneji Peacemaker's Portfolio # This is what shows up in the tab of the browser
+title: Eneji Ohieku's Portfolio # This is what shows up in the tab of the browser
 
 
 
 # Hero Section
-name: Ohieku Eneji Peacemaker
-headline: headline message
+name: Eneji Peacemaker Ohieku
+headline: Roboticist | ML Engineer | Backend Developer | Competitive Programmer (Math & DSA sports)
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  Write an awesome intro and discuss your highlights and qualification. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am a Roboticist with a unique full-stack foundation that spans from junior school coding to professional development.
+  A self-taught programmer starting with Python game development and backend systems, later mastering C++ through extensive reading (I love books) and embedded systems work. 
+  Currently pursuing B.Eng. in Mechatronics Engineering while actively working with ROS, OpenCV, TensorFlow, and hardware prototyping. 
+  Combines strong mathematical problem-solving and DSA to tackle tough algorithimic problems.
+  Also have practical skills in mechanical CAD, electronics design and low-level firmware development. 
+  This blend of deep technical breadth from high-level AI down to bare-metal embedded systems, 
+  enables me to design and implement end-to-end robotic systems.
+
+
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
-profile_image: ./assets/images/profile-image/avatar.jpeg
+profile_image: ./assets/images/profile-image/cavista_portrait1.jpeg
 
 
 # Link your resume
 # You can place your resume in assets/resume/{resume.pdf or add external link such as pdf saved in google drive 
-resume-url: https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing # or /assets/resume/resume.pdf
+resume-url: https://drive.google.com/file/d/1DKCTlQ96W1I0QKp6nq_7ysWsZrrzSQ7H/view # or /assets/resume/resume.pdf
 
 
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: test    # https://www.linkedin.com/in/{your url slug} 
-  github: leea12    # https://github.com/{your url slug} 
-  stackoverflow: test      # https://stackoverflow.com/users/{your url slug}
+  linkedin: https://www.linkedin.com/in/enejiohieku/   # https://www.linkedin.com/in/{your url slug} 
+  github: https://github.com/enejiohieku  # https://github.com/{your url slug} 
+  stackoverflow:       # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
-  x-twitter:   # https://x.com/{your url slug} 
+  x-twitter: https://x.com/enejiohieku  # https://x.com/{your url slug} 
   threads:            # https://threads.net/@{your url slug} 
   instragram:       # https://instagram.com/{your url slug} 
-  youtube:           # https://youtube.com/@{your url slug} 
+  youtube: https://youtube.com/@enejiohieku          # https://youtube.com/@{your url slug} 
   discord:            # https://discord.com/users/{your url slug} 
   bluesky:           # https://bsky.app/profile/{your url slug} 
   
