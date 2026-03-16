@@ -128,13 +128,12 @@ formspree-key:   xgonnevb
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors:
-  text: "#33ff99"        # A minty but bright neon green (very modern-retro)
-  border: "#1a4d2e"      # A deep forest green for structure
-  link: "#7affb6"        # A brighter, cleaner green for interactivity
-  highlight: "#00ffcc"   # A cyan/green highlight for a digital look
-  background: "#0c0c0c"  # Off-black (pure black can be hard on the eyes)
-  light_background: "#142014" # Slightly lighter black with a green tint
-
+  text: "#9bbc70"        # The exact green from the Game Boy Color's "retro" mode
+  border: "#556b2f"      # Dark olive green
+  link: "#c0ff80"        # A slightly yellow-green for links
+  highlight: "#ffffb0"   # A very pale yellow-green highlight
+  background: "#0b140b"  # Very dark, almost black, green
+  light_background: "#1f2a1f" # A dark green that you can see, for card backgrounds
 
 # A few examples. 
 basic theme:
