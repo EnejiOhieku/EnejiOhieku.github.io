@@ -10,7 +10,7 @@ skills:
   - Game Logic
   - Matrix Manipulation
 
-main-image: /game_play.png
+main-image: /image.png
 ---
 
 ---
