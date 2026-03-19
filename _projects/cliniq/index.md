@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Cliniq Connected Health Care Platform
-description:  This was an hackathon project i built with in a team. I did the role of a backend developer building the backend with python (django).
+description:  This was an hackathon project i built with in a team. I played the role of a backend developer building the backend with python (django). Handling Database management, Deployment, Model Inferencing etc.
 skills: 
   - Hackathon Project
   - Python
   - Django
   - Gemini SDK
   - API Development
+  - PythonAnywhere Deployment
 
 main-image: /web_view.png
 ---

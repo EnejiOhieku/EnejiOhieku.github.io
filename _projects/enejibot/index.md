@@ -19,6 +19,6 @@ main-image: /robot.png
 
 ---
 
-{% include youtube-video.html id="XGC31lmdS6s" autoplay = "true" %}
+{% include youtube-video.html id="KNJtpKn5eZI" autoplay = "true" %}
 
 ---
