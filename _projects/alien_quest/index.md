@@ -10,12 +10,13 @@ skills:
   - Python
   - Kivy
 
-main-image: /game_play.png
+main-image: /game_play2.png
 ---
 
 
 ---
-{% include youtube-video.html id="XGC31lmdS6s" autoplay = "true" %}
+https://www.youtube.com/watch?v=A_ya9EiYzsk
+{% include youtube-video.html id="A_ya9EiYzsk" autoplay = "true" %}
 
 [check out the project on github](https://github.com/EnejiOhieku/alien_quest)
 
