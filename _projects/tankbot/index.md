@@ -17,6 +17,6 @@ main-image: /image.png
 
 {% include youtube-video.html id="KNJtpKn5eZI" autoplay = "true" %}
 
-[check out the project on github]()
+[check out the project on github](https://github.com/EnejiOhieku/)
 
 ---

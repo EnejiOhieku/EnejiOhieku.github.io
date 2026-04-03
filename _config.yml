@@ -71,7 +71,7 @@ skills:
     - Keras
   - category: Robotic Software Frameworks/Tools
     tools:
-    - ROS (Robot Operating System)
+    - ROS2 (Robot Operating System)
     - Gazebo
     - URDF/SDF
     - RViz
@@ -81,6 +81,8 @@ skills:
     - Raspberry Pi
     - STM32
     - ESP32
+    - FreeRTOS
+    - Zephyr RTOS
   - category: 3D Modeling
     tools:
     - FreeCAD
