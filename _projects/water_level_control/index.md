@@ -17,6 +17,7 @@ main-image: /image.png
 
 ---
 
-{% include youtube-video.html id="KNJtpKn5eZI" autoplay = "true" %}
+{% include youtube-video.html id="Gbp1MIEsqkY" autoplay = "true" %}
+[Check out the project on github](https://github.com/EnejiOhieku/water_level_counter)
 
 ---
