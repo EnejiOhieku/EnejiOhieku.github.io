@@ -1,5 +1,6 @@
 ---
 layout: post
+category: ai
 title: Healix Unified Health Care Platform
 description:  An hackathon project i build with a team at the Cavista Hackathon 2026 where we came 4th place. I functioned as a backend & ML developer. I built the backend with python (django).
 

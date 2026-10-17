@@ -1,19 +1,40 @@
-<footer>
-    <div class="footer-content">
-        <div class="links">
-            <a href="/">
-                <span>Home</span>
-            </a>
-            <a href="/projects/">
-                <span>Projects</span>
-            </a>
-            <a href={{site.resume-url}} target="_blank" rel="noopener noreferrer">
-                <span>Resume</span>
+<!-- _includes/footer.html -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo">
+                    <span class="brand-dot"></span>
+                    <span>{{ site.name }}</span>
+                </a>
+                <p class="footer-tagline">{{ site.headline }}</p>
+            </div>
+
+            <div class="footer-nav">
+                <a href="/#spotlight">Spotlight</a>
+                <a href="/#about">About</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
+                <a href="{{ site.resume-url }}" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/{{ site.external-links.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/{{ site.external-links.linkedin }}/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://open.kattis.com/users/{{ site.external-links.kattis }}" target="_blank" rel="noopener noreferrer" title="Kattis"><i class="fa-solid fa-code"></i></a>
+                <a href="https://x.com/{{ site.external-links.x-twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="mailto:{{ site.external-links.gmail }}" target="_blank" rel="noopener noreferrer" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© {{ 'now' | date: "%Y" }} {{ site.name }}. Built for robotics, embedded systems, and competitive software.</p>
+            <p class="attribution">Portfolio based on Free-To-Engineer template by <a href="https://lowinertia.com" target="_blank" rel="noopener noreferrer">lowinertia.com</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>).</p>
+            
+            <a href="#" class="back-to-top" title="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
             </a>
         </div>
-    </div>
-    <div class="license">
-        <span>For any question or suggestion for the portfolio template or projects, reach out <a class="help" href="mailto:admin@lowinertia.com"> Here</a> </span>
-        <p>Free-To-Engineer portfolio template © 2025 by lowinertia.com is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
     </div>
 </footer>

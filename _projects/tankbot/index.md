@@ -1,7 +1,8 @@
 ---
 layout: post
+category: robotics
 title: TankBot (HiWonder)
-description:  
+description: Autonomous tracked mobile robot built with Raspberry Pi and Python, featuring robotic arm manipulation, ultrasonic obstacle avoidance, and real-time sensor telemetry.
 
 
 skills: 

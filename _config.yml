@@ -12,16 +12,13 @@ title: Eneji Ohieku's Portfolio # This is what shows up in the tab of the browse
 
 
 # Hero Section
-name: Eneji Peacemaker Ohieku
-headline: Roboticist | ML Engineer | Backend Developer | Competitive Programmer (Math & DSA sports)
+name: Ohieku Eneji Peacemaker
+headline: Roboticist • Embedded Systems Engineer • ROS Control Member • Competitive Programmer
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  I am a Roboticist with a unique full-stack foundation that spans from junior school coding to professional development.
-  A self-taught programmer starting with Python game development and backend systems, later mastering C++ through extensive reading (I love books) and embedded systems work. 
-  Currently pursuing B.Eng. in Mechatronics Engineering while actively working with ROS, OpenCV, TensorFlow, and hardware prototyping. 
-  Combines strong mathematical problem-solving and DSA to tackle tough algorithimic problems.
-  Also have practical skills in mechanical CAD, electronics design and low-level firmware development. 
-  This blend of deep technical breadth from high-level AI down to bare-metal embedded systems, 
-  enables me to design and implement end-to-end robotic systems.
+  Roboticist and embedded systems engineer building autonomous machines from bare-metal silicon to intelligent control.
+  Self-taught since junior school with Python game development, later mastering modern C++ through textbooks and deep curiosity.
+  Member and contributor to the official ROS Control (ros-controls) organization, lead architect of Zenbedded (bridging Zephyr RTOS with ros2_control via Zenoh), and 1st-place hackathon champion (Cavista Hackathon 2025 & Codefest 2025 NIGHACK).
+  Pursuing B.Eng. in Mechatronics Engineering at LASUSTECH while competing in algorithmic problem solving (Kattis) with deep foundations in Data Structures & Algorithms (DSA).
 
 
 
@@ -39,6 +36,7 @@ resume-url: https://drive.google.com/file/d/1DKCTlQ96W1I0QKp6nq_7ysWsZrrzSQ7H/vi
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
   linkedin: enejiohieku   # https://www.linkedin.com/in/{your url slug} 
   github: enejiohieku  # https://github.com/{your url slug}
+  kattis: ohieku-eneji # https://open.kattis.com/users/{your url slug}
   youtube: enejiohieku          # https://youtube.com/@{your url slug}  
   x-twitter: enejiohieku  # https://x.com/{your url slug}
   gmail: enejiohieku@gmail.com 
@@ -128,16 +126,30 @@ formspree-key:   xgonnevb
 
 
 
-# Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
+# Active theme (Update this to switch themes).
 colors:
-  text: "#9bbc70"        # The exact green from the Game Boy Color's "retro" mode
-  border: "#556b2f"      # Dark olive green
-  link: "#c0ff80"        # A slightly yellow-green for links
-  highlight: "#ffffb0"   # A very pale yellow-green highlight
-  background: "#0b140b"  # Very dark, almost black, green
-  light_background: "#1f2a1f" # A dark green that you can see, for card backgrounds
+  text: "#f8fafc"               # Crisp, high-contrast readable white-slate
+  text_muted: "#94a3b8"         # Balanced secondary slate
+  border: "rgba(255, 255, 255, 0.08)" # Subtle clean card borders
+  border_glow: "rgba(0, 229, 255, 0.4)" # Electric cyan glow on hover
+  link: "#00e5ff"               # Electric Cyan (Robotics & High-Speed Comms)
+  highlight: "#38bdf8"          # Precision Sky Blue
+  background: "#080c14"         # Deep Midnight Slate
+  light_background: "#0f172a"   # Deep Navy Card Background
+  card_surface: "rgba(15, 23, 42, 0.85)" # Translucent Frosted Glass
+  accent: "#6366f1"             # Cyber Indigo (Control Systems & Computing)
+  badge_bg: "rgba(0, 229, 255, 0.1)" # Accent pill background
+  badge_text: "#38bdf8"         # Accent pill text
 
-# A few examples. 
+# Theme Presets
+retro theme:
+  text: "#dcfce7"
+  border: "#556b2f"
+  link: "#4ade80"
+  highlight: "#bef264"
+  background: "#060d06"
+  light_background: "#0f1f0f"
+
 basic theme:
   text: "#1a1c20"
   border: "#ddd"

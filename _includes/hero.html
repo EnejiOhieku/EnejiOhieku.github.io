@@ -1,100 +1,93 @@
 
 <!-- SECTION 1: Hero -->
 <section class="hero-section">
-    <div class="group">
-        <div class="text">
-            <h2>
-                I'm {{ site.name | split: ' ' | first }} 
+    <div class="hero-container">
+        <div class="hero-text">
+            <div class="hero-status-pill">
+                <span class="status-indicator"></span>
+                <span>Available for Robotics & Embedded Opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight-name">{{ site.name }}</span>
+            </h1>
+
+            <h2 class="hero-headline">{{ site.headline }}</h2>
+
+            <p class="hero-description">{{ site.description }}</p>
+
+            <div class="hero-social-links">
                 {% if site.external-links %}
-                <span class="external-links">
-                    {% assign platforms = "linkedin,x-twitter,github,stackoverflow,discord,medium,threads,bluesky,instagram,youtube" | split: "," %}
+                    {% assign platforms = "github,linkedin,kattis,x-twitter,gmail,youtube" | split: "," %}
                     {% for platform in platforms %}
                         {% if site.external-links[platform] %}
                             {% case platform %}
-                            {% when 'linkedin' %}
-                            <a href="https://www.linkedin.com/in/{{ site.external-links[platform] }}/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        
                             {% when 'github' %}
-                                <a href="https://github.com/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://github.com/{{ site.external-links[platform] }}" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
                                     <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
                                 </a>
-                            
-                            {% when 'stackoverflow' %}
-                                <a href="https://stackoverflow.com/users/{{ site.external-links[platform] }}/" target="_blank">
-                                    <i class="fa-brands fa-stack-overflow"></i>
+                            {% when 'linkedin' %}
+                                <a href="https://www.linkedin.com/in/{{ site.external-links[platform] }}/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span>LinkedIn</span>
                                 </a>
-                            
-                            {% when 'discord' %}
-                                <a href="https://discord.com/users/{{ site.external-links[platform] }}/" target="_blank">
-                                    <i class="fa-brands fa-discord"></i>
+                            {% when 'kattis' %}
+                                <a href="https://open.kattis.com/users/{{ site.external-links[platform] }}" target="_blank" rel="noopener noreferrer" title="Kattis Profile">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>Kattis</span>
                                 </a>
-                            
-                            {% when 'medium' %}
-                                <a href="https://medium.com/@{{ site.external-links[platform] }}/" target="_blank">
-                                    <i class="fa-brands fa-medium"></i>
-                                </a>
-                            
                             {% when 'x-twitter' %}
-                                <a href="https://x.com/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://x.com/{{ site.external-links[platform] }}" target="_blank" rel="noopener noreferrer" title="Twitter / X">
                                     <i class="fa-brands fa-x-twitter"></i>
+                                    <span>X (Twitter)</span>
                                 </a>
-                            
-                            {% when 'threads' %}
-                                <a href="https://threads.net/@{{ site.external-links[platform] }}/" target="_blank">
-                                    <i class="fa-brands fa-threads"></i>
-                                </a>
-                            
-                            {% when 'bluesky' %}
-                                <a href="https://bsky.app/profile/{{ site.external-links[platform] }}/" target="_blank">
-                                    <i class="fa-solid fa-cloud"></i>
-                                </a>
-                            
-                            {% when 'instagram' %}
-                                <a href="https://instagram.com/{{ site.external-links[platform] }}/" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            
                             {% when 'gmail' %}
-                                <a href="mailto:{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="mailto:{{ site.external-links[platform] }}" target="_blank" rel="noopener noreferrer" title="Email Me">
                                     <i class="fa-solid fa-envelope"></i>
+                                    <span>Email</span>
                                 </a>
-                                
                             {% when 'youtube' %}
-                                <a href="https://youtube.com/@{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="https://youtube.com/@{{ site.external-links[platform] }}" target="_blank" rel="noopener noreferrer" title="YouTube Channel">
                                     <i class="fa-brands fa-youtube"></i>
+                                    <span>YouTube</span>
                                 </a>
-
                             {% endcase %}
                         {% endif %}
                     {% endfor %}
-                </span>
                 {% endif %}
-            </h2>
-            
-            <h3> {{site.headline}} </h3>
-            <p> {{site.description}}</p>
-            <div class="links">
-                <a href="#projects">
-                    <i class="fa-solid fa-pen"></i>
-                    <span>Projects</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#spotlight" class="btn btn-primary">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Featured Work</span>
                 </a>
-                <a href="#skills">
-                    <i class="fa-solid fa-hammer"></i>
-                    <span>Skills</span>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span>All Projects</span>
                 </a>
-                <a href="#contact">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Contact Me</span>
+                <a href="#about" class="btn btn-outline">
+                    <i class="fa-solid fa-user"></i>
+                    <span>About Me</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Contact</span>
                 </a>
             </div>
-            
         </div>
-        <div class="headshot">
-            <img src= {{site.profile_image}} alt="john doe headshot">       
+
+        <div class="hero-media">
+            <div class="headshot-wrapper">
+                <div class="headshot-glow"></div>
+                <img src="{{ site.profile_image }}" alt="{{ site.name }} portrait" class="headshot-img">
+                <div class="headshot-badge">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>ROS Control • Zephyr RTOS</span>
+                </div>
+            </div>
         </div>
     </div>
-    
 </section>
 

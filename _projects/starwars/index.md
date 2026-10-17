@@ -1,7 +1,8 @@
 ---
 layout: post
+category: algorithms
 title: StarWars Space Shooting Game
-description:  
+description: A 2D arcade space shooter developed with Python and Pygame, featuring object-oriented game loops, enemy wave mechanics, and collision detection.
 
 skills: 
   - Python

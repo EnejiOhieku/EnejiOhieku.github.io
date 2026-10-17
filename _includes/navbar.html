@@ -1,36 +1,41 @@
-<!-- _includes/nav.html -->
-<nav>
-    <div class="left">
-        <a href="/">{{site.name}}</a>
+<!-- _includes/navbar.html -->
+<nav class="site-nav">
+    <div class="nav-brand">
+        <a href="/" class="brand-link">
+            <span class="brand-dot"></span>
+            <span class="brand-name">{{ site.name }}</span>
+        </a>
     </div>
 
     <!-- Desktop Menu -->
-    <div class="right desktop-nav">
-        <a href="/">
-            <span>Home</span>
-        </a>
-        <a href="/projects/">
-            <span>Projects</span>
-        </a>
-        <a href="{{site.resume-url}}" target="_blank" rel="noopener noreferrer">
+    <div class="nav-menu desktop-nav">
+        <a href="/#spotlight"><span>Spotlight</span></a>
+        <a href="/#about"><span>About</span></a>
+        <a href="/#projects"><span>Projects</span></a>
+        <a href="/#skills"><span>Skills</span></a>
+        <a href="/#contact"><span>Contact</span></a>
+        <a href="{{ site.resume-url }}" target="_blank" rel="noopener noreferrer" class="nav-resume-btn">
+            <i class="fa-solid fa-file-pdf"></i>
             <span>Resume</span>
         </a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Toggle menu" style="color: #9bbc70;">
-        <i class="fa fa-bars fa-2x"></i>
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
     </button>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu Drawer -->
     <div class="mobile-nav">
-        <a href="/">
-            <span>Home</span>
-        </a>
-        <a href="/projects/">
-            <span>Projects</span>
-        </a>
-        <a href="{{site.resume-url}}" target="_blank" rel="noopener noreferrer">
+        <a href="/#spotlight"><span>Spotlight</span></a>
+        <a href="/#about"><span>About</span></a>
+        <a href="/#projects"><span>Projects</span></a>
+        <a href="/#skills"><span>Skills</span></a>
+        <a href="/#contact"><span>Contact</span></a>
+        <a href="{{ site.resume-url }}" target="_blank" rel="noopener noreferrer" class="mobile-resume-btn">
+            <i class="fa-solid fa-file-pdf"></i>
             <span>Resume</span>
         </a>
     </div>

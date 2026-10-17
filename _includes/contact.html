@@ -1,20 +1,88 @@
-  <!-- SECTION 4: Contact-->
+<!-- _includes/contact.html -->
 <section id="contact" class="contact-section">
-    <h2>Contact</h2>
-
-    <div class="group">
-      
-        <form action="https://formspree.io/f/{{site.formspree-key}}" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" style="color: #9bbc70;">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" style="color: #9bbc70;">
-
-            <label for="message">Message</label>
-            <textarea id="message" cols = "30" rows="10" name="message" style="color: #9bbc70;"></textarea>
-
-            <button type="submit" style="color: #0b140b;">Send Message</button>
-        </form>
+    <div class="section-header">
+        <span class="section-tag">Let's Build Together</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Interested in robotics collaboration, embedded firmware development, or high-performance systems engineering? Drop me a message.</p>
     </div>
-  </section>
+
+    <div class="contact-container">
+        <!-- Direct Contact Details -->
+        <div class="contact-info-panel">
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">Direct Email</span>
+                    <a href="mailto:{{ site.external-links.gmail }}" class="contact-value">{{ site.external-links.gmail }}</a>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Lagos, Nigeria (UTC+1)</span>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/{{ site.external-links.github }}" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/{{ site.external-links.github }}</a>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/{{ site.external-links.linkedin }}/" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/{{ site.external-links.linkedin }}</a>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="contact-details">
+                    <span class="contact-label">Open Kattis</span>
+                    <a href="https://open.kattis.com/users/{{ site.external-links.kattis }}" target="_blank" rel="noopener noreferrer" class="contact-value">kattis.com/users/{{ site.external-links.kattis }}</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-panel">
+            <form action="https://formspree.io/f/{{ site.formspree-key }}" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Ada Lovelace" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" name="email" placeholder="ada@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" placeholder="Tell me about your project, idea, or opportunity..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Send Message</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

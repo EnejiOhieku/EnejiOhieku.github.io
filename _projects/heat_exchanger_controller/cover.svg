@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="600" y="85" text-anchor="middle" fill="#00e5ff" font-family="'Inter', sans-serif" font-weight="700" font-size="34" letter-spacing="1">
+    ESP32 HEAT EXCHANGER CONTROL &amp; TELEMETRY
+  </text>
+  <text x="600" y="125" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-weight="400" font-size="18">
+    Industrial Closed-Loop Rig • 4x 1-Wire DS18B20 • 30A Interlock • Google Gemini 2.0 Flash AI
+  </text>
+
+  <!-- Block 1: Sensors Layer -->
+  <g transform="translate(100, 180)">
+    <rect width="260" height="340" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="130" y="40" text-anchor="middle" fill="#38bdf8" font-family="'Inter', sans-serif" font-weight="600" font-size="18">1. SENSOR ARRAY</text>
+    
+    <g transform="translate(20, 70)">
+      <rect width="220" height="50" rx="8" fill="#1e293b"/>
+      <text x="110" y="30" text-anchor="middle" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="14">4x DS18B20 (1-Wire)</text>
+    </g>
+    <g transform="translate(20, 135)">
+      <rect width="220" height="50" rx="8" fill="#1e293b"/>
+      <text x="110" y="30" text-anchor="middle" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="14">Flow Meter (Interrupts)</text>
+    </g>
+    <g transform="translate(20, 200)">
+      <rect width="220" height="50" rx="8" fill="#1e293b"/>
+      <text x="110" y="30" text-anchor="middle" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="14">16x2 I2C Display</text>
+    </g>
+    <g transform="translate(20, 265)">
+      <rect width="220" height="50" rx="8" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="1"/>
+      <text x="110" y="30" text-anchor="middle" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="13">Dry-Fire Cutoff (&lt;0.3 LPM)</text>
+    </g>
+  </g>
+
+  <!-- Connection Line 1 to 2 -->
+  <path d="M 360 350 L 460 350" stroke="#00e5ff" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="465,350 455,345 455,355" fill="#00e5ff"/>
+
+  <!-- Block 2: Master Controller (ESP32) -->
+  <g transform="translate(470, 160)">
+    <rect width="260" height="380" rx="16" fill="rgba(15, 23, 42, 0.95)" stroke="#00e5ff" stroke-width="2" filter="url(#glow)"/>
+    <text x="130" y="45" text-anchor="middle" fill="#00e5ff" font-family="'Inter', sans-serif" font-weight="700" font-size="20">ESP32 BRAIN</text>
+    <text x="130" y="70" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13">Dual-Core Xtensa LX6</text>
+
+    <g transform="translate(20, 95)">
+      <rect width="220" height="45" rx="6" fill="#1e293b"/>
+      <text x="110" y="27" text-anchor="middle" fill="#a5b4fc" font-family="'Inter', sans-serif" font-size="13">Core 0: PID &amp; Safety Loops</text>
+    </g>
+    <g transform="translate(20, 150)">
+      <rect width="220" height="45" rx="6" fill="#1e293b"/>
+      <text x="110" y="27" text-anchor="middle" fill="#a5b4fc" font-family="'Inter', sans-serif" font-size="13">Core 1: WebServer &amp; Telemetry</text>
+    </g>
+    <g transform="translate(20, 205)">
+      <rect width="220" height="45" rx="6" fill="#1e293b"/>
+      <text x="110" y="27" text-anchor="middle" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="13">Dual AP + Station WiFi</text>
+    </g>
+    <g transform="translate(20, 260)">
+      <rect width="220" height="45" rx="6" fill="#1e293b"/>
+      <text x="110" y="27" text-anchor="middle" fill="#34d399" font-family="'Inter', sans-serif" font-size="13">In-Memory CSV Ring Buffer</text>
+    </g>
+    <g transform="translate(20, 315)">
+      <rect width="220" height="45" rx="6" fill="rgba(99, 102, 241, 0.2)" stroke="#6366f1" stroke-width="1"/>
+      <text x="110" y="27" text-anchor="middle" fill="#c084fc" font-family="'Inter', sans-serif" font-size="13">Live HTML5 Canvas Charts</text>
+    </g>
+  </g>
+
+  <!-- Connection Line 2 to 3 -->
+  <path d="M 730 350 L 830 350" stroke="#6366f1" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="835,350 825,345 825,355" fill="#6366f1"/>
+
+  <!-- Block 3: Actuators & AI Edge -->
+  <g transform="translate(840, 180)">
+    <rect width="260" height="340" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="130" y="40" text-anchor="middle" fill="#c084fc" font-family="'Inter', sans-serif" font-weight="600" font-size="18">ACTUATORS &amp; AI</text>
+    
+    <g transform="translate(20, 70)">
+      <rect width="220" height="50" rx="8" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="1"/>
+      <text x="110" y="30" text-anchor="middle" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="13">30A Relay (Heater)</text>
+    </g>
+    <g transform="translate(20, 135)">
+      <rect width="220" height="50" rx="8" fill="#1e293b"/>
+      <text x="110" y="30" text-anchor="middle" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="13">L298N (Variable Pump)</text>
+    </g>
+    <g transform="translate(20, 200)">
+      <rect width="220" height="90" rx="8" fill="rgba(99, 102, 241, 0.15)" stroke="#6366f1" stroke-width="1.5"/>
+      <text x="110" y="32" text-anchor="middle" fill="#38bdf8" font-family="'Inter', sans-serif" font-weight="600" font-size="14">Google Gemini AI</text>
+      <text x="110" y="55" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Gemini 2.0 Flash Edge API</text>
+      <text x="110" y="75" text-anchor="middle" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="11">Thermodynamic Analysis</text>
+    </g>
+  </g>
+</svg>

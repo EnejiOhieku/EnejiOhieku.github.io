@@ -1,5 +1,6 @@
 ---
 layout: post
+category: algorithms
 title: Super TicTacToe
 description:  Developed as a personal project in 200-level second-semester, I built this application with the specific goal of transforming the simple, often predictable game of Tic-Tac-Toe into a complex, multi-layered strategy experience.
 

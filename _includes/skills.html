@@ -1,23 +1,25 @@
+<!-- _includes/skills.html -->
 <section id="skills" class="skills-section">
-    <h2>Skills</h2>
+    <div class="section-header">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">Skills & Tooling</h2>
+        <p class="section-subtitle">A comprehensive breakdown of tools, frameworks, and engineering disciplines across the stack.</p>
+    </div>
         
-    <ul class="skill-categories">
-        {% for skill in site.skills %}
-          <li>
-            <div class="skills-card">
-              <span class="category-label">{{ skill.category}}</span>
+    <div class="skills-grid">
+        {% for category in site.skills %}
+            <div class="skills-category-card">
+                <div class="category-header">
+                    <span class="category-indicator"></span>
+                    <h3 class="category-title">{{ category.category }}</h3>
+                </div>
             
-              <ul class="skills-list">
-                {% for skill in skill.tools %}
-                  <li class="skill">
-                    {{ skill }}
-                  </li>
-                {% endfor %}
-                </ul>
+                <div class="tools-chip-list">
+                    {% for tool in category.tools %}
+                        <span class="tool-chip">{{ tool }}</span>
+                    {% endfor %}
+                </div>
             </div>
-            
-          </li> 
         {% endfor %}
-      </ul>
-
+    </div>
 </section>

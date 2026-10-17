@@ -1,26 +1,70 @@
-<!-- SECTION 3: project -->
-<section id="projects" class="project-grid-section">
-    <h2>Projects</h2>
-
-    <div class="grid-container">
-        {% for item in site.projects %}
-    <a href="{{ item.url }}" class="project-link">
-        <div class="project-card">
-            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
-            {% assign image_path = "/" | append: folder_path | append: item['main-image'] %}
-            <img src="{{ image_path }}" alt="{{ item.title }} image">
-            <h3 class="project-title">{{ item.title }}</h3>
-            <div class="project-skills">
-                {% for skill in item.skills %}
-                    <span class="skill">{{ skill }}</span>
-                {% endfor %}
-            </div>
-            <p class="project-description">{{ item.description }}</p>
-            <button class="read-more">Read more →</button>
-        </div>
-    </a>
-{% endfor %}
+<!-- _includes/projects.html -->
+<section id="projects" class="projects-section">
+    <div class="section-header">
+        <span class="section-tag">Engineering Portfolio</span>
+        <h2 class="section-title">Projects & Hardware Systems</h2>
+        <p class="section-subtitle">Robotics middleware, custom 4-layer PCBs, deterministic real-time firmware, and full-stack software.</p>
     </div>
 
+    <!-- Category Filter Controls -->
+    <div class="project-filter-bar">
+        <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-layer-group"></i> All Projects
+        </button>
+        <button class="filter-btn" data-filter="robotics">
+            <i class="fa-solid fa-robot"></i> Robotics & ROS 2
+        </button>
+        <button class="filter-btn" data-filter="embedded">
+            <i class="fa-solid fa-microchip"></i> Embedded & Hardware
+        </button>
+        <button class="filter-btn" data-filter="ai">
+            <i class="fa-solid fa-brain"></i> AI & Systems
+        </button>
+        <button class="filter-btn" data-filter="algorithms">
+            <i class="fa-solid fa-calculator"></i> Algorithms & Math
+        </button>
+    </div>
 
- </section>
+    <div class="grid-container" id="projects-grid">
+        {% assign featured_projects = site.projects | where: "featured", true %}
+        {% assign regular_projects = site.projects | where_exp: "item", "item.featured != true" %}
+        {% assign all_ordered_projects = featured_projects | concat: regular_projects %}
+
+        {% for item in all_ordered_projects %}
+            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
+            {% assign image_path = "/" | append: folder_path | append: item['main-image'] | relative_url %}
+            
+            <div class="project-card-wrapper" data-category="{{ item.category | default: 'all' | downcase }}">
+                <a href="{{ item.url }}" class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="{{ image_path }}" alt="{{ item.title }} image" loading="lazy">
+                        {% if item.featured %}
+                            <span class="featured-badge"><i class="fa-solid fa-star"></i> Featured</span>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="project-card-content">
+                        <h3 class="project-title">{{ item.title }}</h3>
+                        
+                        <div class="project-skills">
+                            {% for skill in item.skills limit:4 %}
+                                <span class="skill-tag">{{ skill }}</span>
+                            {% endfor %}
+                            {% if item.skills.size > 4 %}
+                                <span class="skill-tag more">+{{ item.skills.size | minus: 4 }}</span>
+                            {% endif %}
+                        </div>
+                        
+                        <p class="project-description">{{ item.description | truncate: 140 }}</p>
+                        
+                        <div class="project-card-footer">
+                            <span class="read-more-link">
+                                Explore Project <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>

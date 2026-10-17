@@ -2,34 +2,47 @@
 layout: wrapper
 ---
 
-<div class="post-view">
-    <div class="summary">
-        
-       
+<div class="project-post-view">
+    <div class="post-navigation">
+        <a href="/#projects" class="back-to-projects">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Projects</span>
+        </a>
+    </div>
+
+    <div class="post-header-summary">
         {% assign folder_path = page.path | split: "/" | slice: 0, 2 | join: "/" %}
-        {% assign image_path = "/" | append: folder_path | append: page['main-image'] %}       
-        <img src="{{ image_path }}" alt="{{ page.title }} image">
-        
-        <div class="title-header">
-            <h1>{{page.title}}</h1>
+        {% assign image_path = "/" | append: folder_path | append: page['main-image'] | relative_url %}
+        <div class="post-hero-image">
+            <img src="{{ image_path }}" alt="{{ page.title }} cover image">
         </div>
         
-        <div class="project-description">
-            <h2>Project Overview</h2>
-            <p>{{ page.description }}</p>
-        </div>
-        <div class="skills-card">
-            <h2>Skills Used</h2> 
-            <div class="skills-list">
-                {% for skill in page.skills %}
-                <span class="skill">{{ skill }}</span>    
-                {% endfor %}
+        <div class="post-meta-details">
+            <h1 class="post-title">{{ page.title }}</h1>
+            
+            <p class="post-overview-text">{{ page.description }}</p>
+            
+            <div class="post-skills-section">
+                <span class="skills-heading">Technologies & Frameworks:</span>
+                <div class="post-skills-list">
+                    {% for skill in page.skills %}
+                        <span class="skill-tag">{{ skill }}</span>
+                    {% endfor %}
+                </div>
             </div>
+
+            {% if page.repo %}
+                <div class="post-repo-actions">
+                    <a href="{{ page.repo }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fa-brands fa-github"></i>
+                        <span>View Repository on GitHub</span>
+                    </a>
+                </div>
+            {% endif %}
         </div>
     </div>
       
-    <div class="content">
-        {{content}}
+    <div class="post-markdown-content">
+        {{ content }}
     </div>
 </div>
-
