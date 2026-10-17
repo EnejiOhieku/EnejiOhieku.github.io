@@ -75,7 +75,7 @@ Zenbedded introduces a dual-tier serialization model to support both general-pur
 
 ## 🛠️ Key Contributions & Architecture
 
-As the lead architect and core contributor to Zenbedded, my work includes:
+As a core member and contributor to Zenbedded, my work includes:
 
 1. **`zenbedded_hardware_interface`**:
    - Engineered the `SystemInterface` plugin for `ros2_control` with lock-free `realtime_tools::RealtimeBuffer` and `RealtimeThreadSafeBox` protection.
