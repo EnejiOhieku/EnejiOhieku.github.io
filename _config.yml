@@ -130,15 +130,15 @@ formspree-key:   xgonnevb
 colors:
   text: "#f8fafc"               # Crisp, high-contrast readable white-slate
   text_muted: "#94a3b8"         # Balanced secondary slate
-  border: "rgba(255, 255, 255, 0.08)" # Subtle clean card borders
-  border_glow: "rgba(0, 229, 255, 0.4)" # Electric cyan glow on hover
+  border: "rgba(255, 255, 255, 0.08)" # Hairline card borders
+  border_glow: "rgba(0, 229, 255, 0.35)" # Electric cyan glow on hover
   link: "#00e5ff"               # Electric Cyan (Robotics & High-Speed Comms)
   highlight: "#38bdf8"          # Precision Sky Blue
-  background: "#080c14"         # Deep Midnight Slate
-  light_background: "#0f172a"   # Deep Navy Card Background
-  card_surface: "rgba(15, 23, 42, 0.85)" # Translucent Frosted Glass
+  background: "#05080f"         # Deep Obsidian Space Slate
+  light_background: "#0b111e"   # Deep Navy Card Background
+  card_surface: "rgba(11, 17, 30, 0.75)" # Frosted Glass
   accent: "#6366f1"             # Cyber Indigo (Control Systems & Computing)
-  badge_bg: "rgba(0, 229, 255, 0.1)" # Accent pill background
+  badge_bg: "rgba(0, 229, 255, 0.08)" # Accent pill background
   badge_text: "#38bdf8"         # Accent pill text
 
 # Theme Presets
