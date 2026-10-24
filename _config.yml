@@ -128,20 +128,34 @@ formspree-key:   xgonnevb
 
 # Active theme (Update this to switch themes).
 colors:
-  text: "#f8fafc"               # Crisp, high-contrast readable white-slate
-  text_muted: "#94a3b8"         # Balanced secondary slate
-  border: "rgba(255, 255, 255, 0.08)" # Hairline card borders
-  border_glow: "rgba(0, 229, 255, 0.35)" # Electric cyan glow on hover
-  link: "#00e5ff"               # Electric Cyan (Robotics & High-Speed Comms)
-  highlight: "#38bdf8"          # Precision Sky Blue
-  background: "#05080f"         # Deep Obsidian Space Slate
-  light_background: "#0b111e"   # Deep Navy Card Background
-  card_surface: "rgba(11, 17, 30, 0.75)" # Frosted Glass
-  accent: "#6366f1"             # Cyber Indigo (Control Systems & Computing)
-  badge_bg: "rgba(0, 229, 255, 0.08)" # Accent pill background
-  badge_text: "#38bdf8"         # Accent pill text
+  text: "#0f172a"                 # Charcoal Slate (High readability)
+  text_muted: "#475569"           # Refined Neutral Slate
+  border: "#e2e8f0"               # Architectural hairline border
+  border_glow: "rgba(37, 99, 235, 0.15)" # Subtle accent border on hover
+  link: "#2563eb"                 # Swiss Cobalt / Technical Blue
+  highlight: "#1d4ed8"            # Deep Blue
+  background: "#f8fafc"           # Architectural light canvas / Studio paper
+  light_background: "#ffffff"     # Crisp white card surface
+  card_surface: "#ffffff"         # Crisp white card surface
+  accent: "#0f172a"               # Deep Slate accent
+  badge_bg: "#f1f5f9"             # Subtle slate badge background
+  badge_text: "#0f172a"           # High contrast badge text
 
 # Theme Presets
+dark theme:
+  text: "#f8fafc"
+  text_muted: "#94a3b8"
+  border: "rgba(255, 255, 255, 0.08)"
+  border_glow: "rgba(0, 229, 255, 0.35)"
+  link: "#00e5ff"
+  highlight: "#38bdf8"
+  background: "#05080f"
+  light_background: "#0b111e"
+  card_surface: "rgba(11, 17, 30, 0.75)"
+  accent: "#6366f1"
+  badge_bg: "rgba(0, 229, 255, 0.08)"
+  badge_text: "#38bdf8"
+
 retro theme:
   text: "#dcfce7"
   border: "#556b2f"
